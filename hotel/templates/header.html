@@ -1,0 +1,52 @@
+{% load static %}
+<header>
+ <!-- <div class="collapse-nabar-colllapse" id="navbarSupportedContent"> -->
+    <div class="logocontainer"><a href= "{%url 'hotel:IndexView' %}"><img src="{% static 'hotel/img/logo.png' %}" class="logoimg"/></div></a>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="{%url 'hotel:IndexView' %}"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{%url 'hotel:AboutUsView' %}"><i class="fa fa-info-circle" aria-hidden="true"></i> About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{%url 'hotel:RoomListView' %}"><i class="fa fa-bed" aria-hidden="true"></i> Rooms</a>
+      </li>
+      {% if user.is_authenticated %} 
+      <li class="nav-item">
+        <a class="nav-link " href="/accounts/logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a>
+      </li>
+      {% else %}
+      <li class="nav-item">
+        <a class="nav-link " href="/accounts/login"><i class="fa fa-sign-in" aria-hidden="true"></i> Log in</a>
+        <li class="nav-item">
+          <a class="nav-link " href="/accounts/signup"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign up</a>
+      {% endif %}  
+      </li>
+      {% if user.is_authenticated %}
+      <li class="nav-item">
+        <a class="nav-link " href="{%url 'hotel:BookingListView' %}"><i class="fa fa-commenting-o" aria-hidden="true"></i> My Bookings</a>
+      </li>
+      {% else %}
+      <li class="nav-item">
+        <a class="nav-link " href="/accounts/login"><i class="fa fa-commenting-o" aria-hidden="true"></i> My Bookings</a>
+      </li>
+      {% endif %}
+
+      
+
+      <!--<li class="nav-item">
+        <a class="nav-link " href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i> Contact Us</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fa fa-suitcase" aria-hidden="true"></i> Tour Packages</a>
+      </li>-->
+    </ul>
+
+   <!-- <div class="hamburger">
+      <span class="bar"></span> 
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>-->
+  </header>
+<!--  <script type="text/javascript" src="{% static 'hotel/css/script.js' %}"></script>-->

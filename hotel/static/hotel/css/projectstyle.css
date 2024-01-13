@@ -1,0 +1,241 @@
+.logoimg{
+    width: 450px;
+    height: 150px;
+    color: red;
+    border-radius: 0px;
+}
+.heading{
+    color: yellow;
+    width: 100%;
+}
+.logocontainer{
+    background-image: url(../img/logo_background2.jpg);
+    height:auto;
+    width:100%;
+}
+.nav-item{
+    background-color: black;
+}
+.nav-link{
+    color: white; 
+    font-size: x-large;
+}
+.nav{
+    width:100%;
+    background-color: black;
+    border-color: white;
+    border-style: solid;
+    display: flex;
+}
+
+.nav-item{
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+img{
+    width:100%;
+    height:auto;
+}
+.room_list_img {
+    width:100%;
+}
+.slider{
+    
+    
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 5%;
+    
+}
+.slider img{
+    height: 90vh;
+
+}
+
+/*.hamburger{
+    display: none;
+    cursor: pointer;
+}*/
+/*.bar{
+    display:block;
+    width:25px;
+    height:3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+.nav.active{
+    left:0;
+}
+.nav-link{
+    transition: 0.7s ease;
+}
+.nav-link:hover{
+    color: blue;
+}*/
+/*for smaller phones*/
+@media only screen and (max-width: 768px) {
+    .slider img{
+        height: 40vh;
+      }
+    .nav-item{
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+        width:100%
+      }  
+    }
+    /*.hamburger{
+        display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav{
+        position:fixed;
+        /*hide from our view*/
+        /*
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        gap: 60px;
+
+    }*/
+
+    
+
+/* Style the links inside the navigation bar */
+/* */
+/*.nav-link{
+    font-size: 20px;
+    
+} */
+
+
+
+
+
+.body{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:white;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-height: 50vh;
+}
+body{
+    background-image: url(../img/body_background.png);
+    font-family: 'Kulim Park', sans-serif;
+}
+h1{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+
+.copyright{
+    width:100%;
+    text-align: center;
+    height:auto;
+    background-color: black;
+    color: white;
+    font-size:30px;
+  }
+
+.aboutusbutton{
+    color:white;
+    text-decoration: none;
+    border-color:white;
+    border-style:solid;
+    border-width: 2px;
+    padding:2px;
+  }
+  .aboutus{
+    margin-top: 10%;
+  }  
+
+  .about_us_img{
+    display: block;
+    float: left;
+    padding: 5px;
+    width:100%;
+    height: auto;
+
+}
+ .about_us_content{
+     text-align: justify;
+ }
+ .room_image img{
+     display: block;
+     margin-right: auto;
+     margin-left: auto;
+     width: 100%;;
+     height:auto;
+ }
+ .about_us_heading{
+     text-align: center;
+     padding-top: 5%;
+ }
+
+ .category{
+    background-color: silver;
+ }
+ .cancel_button{
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+ }
+ /*room list*/
+ .content {
+ }
+ .content a{
+     text-decoration: none;
+ }
+ .room_list_item{
+     background-color: silver;
+     padding: 5px;;
+     margin: 8px;
+
+ }
+
+ .booking_list_img{
+    width:80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+ }
+ .booked_img {
+    width:80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }

@@ -1,0 +1,106 @@
+{% load static %}
+
+    <!doctype html>
+    <html lang="en">
+  
+    <head>
+      <!-- Required meta tags -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" <meta
+        charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+      <!-- Bootstrap CSS -->
+  
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link href="{% static 'hotel/css/projectstyle.css' %}" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Kulim+Park&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>Monkey Temple Homestay</title>
+    </head>
+  
+  <body>
+    
+    {% include "header.html" %}
+  
+
+  
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <div class="body">
+      <h1>Welcome to Monkey Temple Homestay </h1>
+      <div class="slider">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{{slider_gallery.slider_image1.url}}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="{{slider_gallery.slider_image2.url}}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="{{slider_gallery.slider_image3.url}}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="{{slider_gallery.slider_image4.url}}" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <p><b>Greetings and Namaste Travelers,<b>
+            <p>Monkey Temple Home Stay is delighted to welcome people from different parts of the world to this beautiful
+              Himalayan nation Nepal. Come and enjoy the splendors of nature and richest culture of Nepal. We offer you
+              blissful
+              moments while hosting your stay at our family home. Ethnic Tamang Family will ensure your safety and
+              authentic
+              information about Nepalese culture, traditions and rituals. We always believe that visitors are deities and
+              you
+              too will be treated as our special visitor. Feel at home and experience Nepalese way of living a life.
+              Hygienic
+              food and clean accommodation facilities, traditional & modern amenities along with stunning view of famous
+              MonkeyTemple (Swyambhunath) from room window will definitely make your stay in our home memorable.</p>
+            <h3>Amenities</h3>
+            <p>Home Stay concept is all about experiencing the local way of living while holidaying in unknown places and
+              mingling with the locals. This can present awkward moments of uncomfortable circumstances. However, Monkey
+              Temple
+              Home Stay has tried to endow better upgraded facilities to its visitors in the same way provide authentic
+              local
+              rites, culture and traditions. Therefore those who choose us for their stay in Kathmandu will get both
+              traditional
+              Nepalese styles of living as well as modern facilities.</p>
+  
+            <p>Facilities:</p>
+            High Speed Internet Wifi Services – Our entire room is accessible to wifi internet services
+            which is
+            free of cost for visitors. You can use unlimited internet services and make communication with your friends &
+            family. In-house Laundry – We have highly modern laundry machine in the house. You can use it for cleaning
+            your
+            clothes and linen. Transportation Assistance Services – If you require Car/ jeep /taxi services or needs to go
+            somewhere we will arrange for your transportation 24/7. Modern Kitchen both individual and group – We have
+            fully
+            furnished modern kitchen where you can cook for yourself or join with the family members to taste some ethnic
+            Nepalese dishes. Menu Selection – Ms. Santu Maya Tamang is a very good cook and she has her own menu on
+            kitchen.
+            If you want to cook with her and learn something then you are free to do that as well. You can also share your
+            ideas and cook your own food. Add your expertise on menu. Television and Telephones in Room Daily English
+            Newspapers First Aid Medical Supplies </p>
+    </div>
+    
+    {% include "footer.html" %}
+  </body>
+  
+  </html>

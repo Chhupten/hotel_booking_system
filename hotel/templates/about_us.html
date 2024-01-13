@@ -1,0 +1,73 @@
+{% load static %}
+<Head>
+
+
+    <!doctype html>
+    <html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"
+            meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="{% static 'hotel/css/projectstyle.css' %}" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kulim+Park&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>About Us</title>
+    </head>
+
+<body>
+{%include "header.html"%}
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <div class="body">
+        <h2 class="about_us_heading">About Us</h2>
+        <img src= "{% static 'hotel/img/about_us_img.jpeg' %}" class= "about_us_img"/>
+        <div class="about_us_content">
+            <br>
+        
+        
+        <br>   
+        <p>The host family has four members. Lapsang Lama is a keen admirer of traveling and he himself travels a lot.
+            Therefore, understanding of travelling essence makes your stay at his house very comfortable. Aged 48 years
+            Mr.
+            Lama is very aesthetic personnel with lots of travel tales to share with you. Born in remote region of Temal
+            Kavrepalanchok -4 Boldephediche village Mr. Lama is from the Tamang ethnic community of Nepal.</p>
+
+        <p>These people follow Buddhism and also practice some of the celebrations of Hinduism too. Adored by society
+            and
+            loved by his wife Ms. Santu Maya Lama (43 years old), daughter (Chhuyang Dong Tamang) and son (Chhupten Dong
+            Tamang) Mr. Lama is considered as the most humble person in the society. Experience the remote facts of
+            Nepal’s
+            hilly civilization while you stay at his home.</p>
+
+        <p>Ms. Santu Maya Lama is a typical Nepali woman with very expert kitchen skills.</p>
+
+        <p>She is very famous for her kind gesture towards her colleagues and friends. Her cooking skills are very
+            genuine
+            and you can relish various local delicacies. She is an anchor of the Lama family’s house. Her smiling
+            personality will definitely rub positive vibes on any visitors staying at the house.</p>
+
+        <p>Together with this beautiful ideal couple two kids will make you feel at home. Be dignified happy guests of
+            Lama
+            Family and take back alluring moments of spending time in Nepal.</p>
+        </div> <!-- about us content end-->
+
+    </div> <!-- end of body class -->
+    {%include "footer.html"%}
+</body>
+
+</html>
