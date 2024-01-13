@@ -18,7 +18,7 @@ pip3 version used = 23.3.2
     source venv/bin/activate
 
 4. Install project dependencies
-    pip3 install -r requirements.txt
+    pip3 install -r requirements.txt (ignore the minor error that may be encountered while installing the dependencies. The app will still work properly)
 
 5. Run the Django development server
     python3 manage.py runserver
