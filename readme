@@ -1,0 +1,51 @@
+python version used = 3.11.5
+pip3 version used = 23.3.2
+
+### Installation
+
+1. Clone the repository: (Or Directly download it )
+
+   ```bash
+   git clone https://github.com/Chhupten/hotel_booking_system.git
+
+2. Navigate to the project directory 
+    cd hotel_booking_system
+
+3. Create and activate a virtual environment
+    # On Windows:
+    .\venv\Scripts\activate
+    # On macOS/Linux:
+    source venv/bin/activate
+
+4. Install project dependencies
+    pip3 install -r requirements.txt
+
+5. Run the Django development server
+    python3 manage.py runserver
+
+
+## Accessing the Django Admin Interface
+
+Once the development server is running, you can access the Django admin interface by opening your web browser and navigating to:
+
+http://127.0.0.1:8000/admin/
+
+If you have customized the development server settings or if the port is different, adjust the URL accordingly.
+
+**Credentials for Superuser:**
+
+- Username: cdt or cdt@gmail.com
+- Password: 12345
+
+Superuser: Can delete bookings from other users, create and delete room categories This will ultimately lead to superuser having control over availability of diffrent categories of rooms.
+
+Superuser can also do other admin related stuffs for example adding/delete other user and editing their roles from super user to normal users, etc.
+
+Note: Make sure the development server is running (`python3 manage.py runserver`) before attempting to access the admin interface.
+
+**Credentials for normal user**
+
+- Username: cdtdjango@gmail.com
+- Password: Check12345
+
+User: Can book rooms if available. And can delete their own bookings only.
